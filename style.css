@@ -30,13 +30,16 @@ nav a:hover {
 
 /* HERO SECTION */
 .hero {
-    background: url('assets/bandphoto.jpg') center/cover;
-    height: 300px;
+    background: rgba(0,0,0,0.75); /* override grey image completely */
+    height: 350px;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
-    padding-bottom: 20px;
-    border-bottom: 2px solid #b30000;
+    color: #ffd700;
+    font-size: 2.5rem;
+    text-shadow: 0 0 10px black;
+    border-bottom: 2px solid #b30000; /* red accent */
+    
 }
 
 
