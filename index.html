@@ -3,119 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>La Jugada Nortena</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #111;
-      color: #fff;
-    }
-    header {
-      background: #000;
-      padding: 20px;
-      text-align: center;
-      border-bottom: 2px solid #444;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      padding: 10px 0;
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
-      padding: 50px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    .hero {
-      background: url('band-photo.jpg') center/cover no-repeat;
-      height: 300px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-shadow: 0 0 10px #000;
-      font-size: 2.5rem;
-      font-weight: bold;
-    }
-    .member {
-      margin-bottom: 20px;
-      padding: 15px;
-      background: #222;
-      border-radius: 10px;
-    }
-    footer {
-      background: #000;
-      padding: 20px;
-      text-align: center;
-      border-top: 2px solid #444;
-    }
-  </style>
+  <title>Band Name | Home</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>La Jugada Nortena</h1>
+    <h1>Band Name</h1>
     <nav>
-      <a href="#about">About</a>
-      <a href="#members">Members</a>
-      <a href="#music">Music</a>
-      <a href="#contact">Contact</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="music.html">Music</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
     </nav>
+    <div class="hamburger">&#9776;</div>
   </header>
 
-  <div class="hero">New Album Out Now</div>
+  <div class="hero">
+    <h2>New Album Out Now</h2>
+  </div>
 
-  <section id="about">
-    <h2>About Us</h2>
-    <p>
-      Write a short description about the band here — how they formed, their style,
-      influences, and what makes them unique.
-    </p>
-  </section>
-
-  <section id="members">
-    <h2>Meet the Band</h2>
-    <div class="member">
-      <h3>Member Name</h3>
-      <p>Instrument • Bio or fun fact.</p>
-    </div>
-    <div class="member">
-      <h3>Member Name</h3>
-      <p>Instrument • Bio or fun fact.</p>
-    </div>
-    <div class="member">
-      <h3>Member Name</h3>
-      <p>Instrument • Bio or fun fact.</p>
-    </div>
-     <div class="member">
-      <h3>Member Name</h3>
-      <p>Instrument • Bio or fun fact.</p>
-    </div>
-     <div class="member">
-      <h3>Member Name</h3>
-      <p>Instrument • Bio or fun fact.</p>
-    </div>
-  </section>
-
-  <section id="music">
-    <h2>Music</h2>
-    <p>Add Spotify embeds, YouTube videos, or links to songs here.</p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: example@band.com</p>
-    <p>Instagram: @bandname</p>
-    <p>For booking inquiries, reach out via email.</p>
+  <section class="home-intro">
+    <h2>Welcome</h2>
+    <p>Welcome to the official website for Band Name! Check out our latest music, meet the members, and explore our photo gallery.</p>
   </section>
 
   <footer>
     <p>&copy; 2025 Band Name. All Rights Reserved.</p>
   </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const ham = document.querySelector('.hamburger');
+      const nav = document.querySelector('nav');
+      ham.addEventListener('click', () => nav.classList.toggle('open'));
+    });
+  </script>
 </body>
 </html>
