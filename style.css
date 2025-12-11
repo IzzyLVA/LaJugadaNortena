@@ -102,3 +102,60 @@ footer {
         display: block;
     }
 }
+
+/* ------- MOBILE IMPROVEMENTS ------- */
+@media (max-width: 768px) {
+
+    /* NAVBAR + HAMBURGER */
+    header {
+        padding: 10px 20px;
+    }
+
+    .hamburger {
+        font-size: 2.2rem;
+        padding: 5px;
+    }
+
+    nav {
+        width: 100%;
+        right: 0;
+        top: 60px;
+        border-left: none;
+        border-top: 2px solid #b30000;
+        padding: 10px 0;
+    }
+
+    nav a {
+        padding: 14px 20px;
+        font-size: 1.1rem;
+        border-bottom: 1px solid #222;
+    }
+
+    /* HERO SECTION */
+    .hero {
+        height: 240px;
+        font-size: 1.8rem;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    /* CONTENT */
+    .content {
+        padding: 20px 16px;
+    }
+
+    /* EMBEDS */
+    .embed {
+        height: 220px; /* shorter for phones */
+    }
+
+    /* GALLERY */
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 10px;
+    }
+
+    .gallery img {
+        border-width: 1px;
+    }
+}
