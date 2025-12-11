@@ -1,25 +1,4 @@
-<!-- ========== style.css (COPY ONLY THIS INTO YOUR CSS FILE) ========== -->
-}
-header {
-background: #000;
-padding: 20px;
-border-bottom: 2px solid #b30000;
-display: flex;
-justify-content: space-between;
-align-items: center;
-position: sticky;
-top: 0;
-z-index: 10;
-}
-nav {
-display: flex;
-gap: 20px;
-}
-nav a {
-color: #ffd700;
-text-decoration: none;
-font-weight: bold;
-}
+<style>
 nav a:hover {
 color: #ff3333;
 }
